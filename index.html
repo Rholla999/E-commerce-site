@@ -11,7 +11,9 @@
 
     <nav>
         <div class="nav-links">        
-            <button type="button" class="nav-btn" id="btn">Click</button>
+            <button type="button" class="nav-btn" id="btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
             <h2>SNEAKERS</h2>
             <ul>
                 <li>
@@ -40,6 +42,39 @@
             <img src="/images/image-avatar.png" alt="profile">
         </div>
     </nav>
+
+    <section class="hero">
+        <div class="img-container">
+           <img src="/images/image-product-1.jpg" alt="product1" id="focusImg">
+            <div class="images-list">
+                <img src="/images/image-product-3.jpg" alt="product2">
+                <img src="/images/image-product-2.jpg" alt="product3">
+                <img src="/images/image-product-4.jpg" alt="product4">
+                <img src="/images/image-product-1.jpg" alt="product1">
+            </div>
+        </div>
+
+
+        <div class="content">
+            <p class="head">Sneaker Company</p>
+                <h2>Fall Limited Edition <span class="break"> Sneakers </span></h2>
+                <p class="para">These low-profile sneakers are your perfect casual wear compainion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <p class="buy" id="amount">$125.00 </p>
+                    <p class="off"><span>50%</span> off</p>
+                    <p class="cancel">$250.00</p>
+                </div>
+                <div class="orders">
+                    <div class="input-group">
+                        <button type="button" id="minusBtn" class="orderBtn">-</button>
+                        <input type="number" value="0" id="orderCount">
+                        <button type="button" id="addBtn" class="orderBtn">+</button>
+                    </div>
+                    <button type="button" class="add-cart" id="addCart">Add to Cart</button> 
+                </div>
+        </div>
+
+    </section>
     
     <script src="script.js"></script>
 </body>
