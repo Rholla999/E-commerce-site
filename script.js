@@ -4,6 +4,19 @@ const incrementBtn = document.getElementById('addBtn')
 const decrementBtn = document.getElementById('minusBtn')
 const orderCount = document.getElementById('orderCount')
 const amounttoPay = document.getElementById('amount')
+const cart = document.getElementById('cart')
+
+
+
+cart.addEventListener('click', () => {
+    const cartBody = document.querySelector('.cart-body');
+    if (cartBody.style.display === 'block') {
+        cartBody.style.display = 'none'; 
+    } else {
+        cartBody.style.display = 'block'; 
+    }
+});
+
 
 const pricePerItem = 125;
 
@@ -43,3 +56,21 @@ allImg.forEach((img) => {
         mainImg.src = img.src ;
     })
 })
+
+const images = [
+    "/images/image-product-1.jpg",
+    "/images/image-product-2.jpg",
+    "/images/image-product-3.jpg",
+    "/images/image-product-4.jpg"
+];
+
+let currentImageIndex = 0;
+
+function changeImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length; 
+    mainImg.src = images[currentImageIndex]; 
+}
+
+setInterval(changeImage, 5000);
+
+
